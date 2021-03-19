@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('verify barnch') {
+            steps {
+                echo "$GIT_BRANCH"
+            }
+        }
+    }
+}
